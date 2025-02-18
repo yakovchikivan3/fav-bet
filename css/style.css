@@ -1,0 +1,684 @@
+/* ----------------------------------- MAIN */
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+@font-face {
+	font-family: Roboto-Bold;
+	src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: Roboto-Medium;
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins-Bold;
+	src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+	font-family: Poppins-Medium;
+	src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: Poppins-Regular;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.flex { 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.rel {
+    position: relative;
+}
+
+a { 
+    text-decoration: none;
+    outline: none; 
+    transition: all .3s; 
+    color: #333;
+}
+
+ul, ol { 
+    margin: 0; 
+    padding: 0; 
+}
+
+.page { 
+    width: 360px; 
+    max-width: 100%;
+    margin: 0 auto; 
+    position: relative; 
+    background-color: #fff;
+}
+
+body {
+    background-color: #eee;
+    color: #333;
+}
+
+body.en {
+    font-family: Roboto-Regular;
+}
+
+body.hi {
+    font-family: Poppins-Regular;
+}
+
+br.desc {
+    display: block;
+}
+
+br.mob {
+    display: none;
+}
+
+/* ----------------------------------- HEADER */
+
+header {
+    margin-top: 10px;
+    padding: 10px 20px 0;
+}
+
+header .btn {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 35px;
+    color: #fff;
+    background: #00875F;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.en header .btn {
+    font-family: Roboto-Medium;
+}
+
+.hi header .btn {
+    font-family: Poppins-Medium;
+}
+
+/* ----------------------------------- HEADER.TITLE */
+
+header .title {
+    margin-bottom: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .title .logo {
+    width: 70px;
+    border-radius: 20px;
+    display: block;
+    margin-right: 25px;
+}
+
+header .title h1 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #212121;
+    margin-bottom: 5px;
+    font-family: Roboto-Medium;
+}
+
+header .title h2 {
+    font-size: 13px;
+    line-height: 15px;
+    color: #047A56;
+    margin-bottom: 15px;
+}
+
+.en header .title h2 {
+    font-family: Roboto-Bold;
+}
+
+.hi header .title h2 {
+    font-family: Poppins-Bold;
+}
+
+header .title p {
+    font-size: 13px;
+    line-height: 15px;
+    color: #737373;
+}
+
+/* ----------------------------------- HEADER.INFO */
+
+header .info {
+    margin-bottom: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .info .elem {
+    width: calc(100% / 3);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 38px;
+    border-right: 1px solid #ddd;
+}
+
+header .info .elem:last-child {
+    border: none;
+}
+
+header .info .elem .stars {
+    flex-direction: row;
+    align-items: center;
+}
+
+header .info .elem .stars span {
+    font-size: 14px;
+    line-height: 100%;
+    margin-right: 5px;
+    font-family: Roboto-Medium;
+}
+
+header .info .elem img {
+    width: 28px;
+    height: 20px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+header .info .elem .stars img {
+    width: 13px;
+    height: 12px;
+}
+
+header .info .elem p {
+    font-size: 12px;
+    line-height: 100%;
+    margin-top: 5px;
+    color: #898989;
+}
+
+/* ----------------------------------- HEADER.SLIDERS */
+
+header .carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .carousel-cell {
+    width: calc((100% / 3.5) - 4px);
+    margin: 0 2px;
+    box-sizing: border-box;
+}
+
+header .carousel-cell img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+header .slider {
+    margin-bottom: 20px;
+}
+
+header .slider img {
+    width: 100%;
+}
+
+/* ----------------------------------- MAIN */
+
+main {
+    padding: 0 20px 40px;
+}
+
+main h2 {
+    font-size: 16px;
+    line-height: 25px;
+    color: #636B6F;
+    margin-bottom: 20px;
+}
+
+main .stars {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main .stars img {
+    width: 13px;
+    height: 12px;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 2px;
+}
+
+/* ----------------------------------- MAIN.ABOUT */
+
+main .about {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main .about h2 {
+    font-size: 16px;
+    line-height: 25px;
+    color: #636B6F;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+main .about .info {
+    margin-bottom: 10px;
+    max-height: 96px;
+    overflow-y: hidden;
+    transition: all .3s;
+    padding-right: 25px;
+}
+
+main .about .info p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+    text-align: left;
+}
+
+main .about .info .hidden {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, #FFF 100%);
+    transition: all .3s;
+}
+
+main .about a {
+    display: inline-block;
+    color: #008000;
+    font-size: 14px;
+}
+
+.en main .about a {
+    font-family: Roboto-Medium;
+}
+
+.hi main .about a {
+    font-family: Poppins-Medium;
+}
+
+#less {
+    display: none;
+}
+
+/* ----------------------------------- MAIN.RATING */
+
+main .rating {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+main .rating .left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-right: 10%;
+}
+
+main .rating .left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-right: 10%;
+}
+
+main .rating .left h3 {
+    color: #333;
+    font-size: 64px;
+    line-height: 64px; 
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main .rating .left .stars {
+    margin-bottom: 5px;
+}
+
+main .rating .left span {
+    color: #898989;
+    font-size: 12px;
+    line-height: 24px; 
+    text-align: center;
+}
+
+main .rating .right {
+    width: 60%;
+}
+
+main .rating .right .row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+main .rating .right .row:last-child {
+    margin-bottom: 0;
+}
+
+main .rating .right .row span {
+    color: #737373;
+    text-align: center;
+    font-size: 11px;
+    line-height: 100%;
+    margin-right: 5px;
+}
+
+main .rating .right .row img {
+    display: block;
+    width: 100%;
+}
+
+/* ----------------------------------- MAIN.RAVIEWS */
+
+main .reviews {
+    margin-bottom: 20px;
+}
+
+main .reviews .row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+main .reviews .row:last-child {
+    margin-bottom: 0;
+}
+
+main .reviews .row .photo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    object-position: top center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main .reviews .row .center {
+    margin-right: 5px;
+    width: 100%;
+}
+
+main .reviews .row .center .name {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+main .reviews .row .center .name h3 {
+    color: #4C4C4C;
+    font-size: 13px;
+    line-height: 100%;
+    margin-right: 10px;
+}
+
+.en main .reviews .row .center .name h3 {
+    font-family: Roboto-Medium;
+}
+
+.hi main .reviews .row .center .name h3 {
+    font-family: Poppins-Medium;
+}
+
+main .reviews .row .center .date {
+    color: #AAA;
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 5px;
+}
+
+main .reviews .row .center p {
+    color: #636B6F;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+main .reviews .row .like {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main .reviews .row .like img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    object-position: top center;
+}
+
+main .reviews .row .like span {
+    color: #757575;
+    text-align: center;
+    font-size: 10px;
+    line-height: 100%;
+}
+
+/* ----------------------------------- MAIN.ADD-INFO */
+
+main .add-info {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .add-info .cell {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+main .add-info .cell:last-child, main .add-info .cell:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+main .add-info .cell h3 {
+    color: #000;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+main .add-info .cell span {
+    color: #636B6F;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+    min-height: 175px;
+    height: 175px;
+}
+.flickity-slider {
+    min-height: 175px;
+}
+header .carousel-cell {
+    height: 175px;
+}
+
+/* ----------------------------------- RESPONSIVE */
+
+@media only screen and (max-width: 360px) {
+    header {
+        margin-top: 2.778vw;
+        padding: 2.778vw 5.556vw 0;
+    }
+    header .btn {
+        font-size: 3.889vw;
+        line-height: 9.722vw;
+        border-radius: 1.111vw;
+        margin: 0 auto 5.556vw;
+    }
+    header .title {
+        margin-bottom: 6.944vw;
+    }
+    header .title .logo {
+        width: 19.444vw;
+        border-radius: 5.556vw;
+        margin-right: 6.944vw;
+    }
+    header .title h1 {
+        font-size: 6.111vw;
+        line-height: 6.667vw;
+        margin-bottom: 1.389vw;
+    }
+    header .title h2 {
+        font-size: 3.611vw;
+        line-height: 4.167vw;
+        margin-bottom: 4.167vw;
+    }
+    header .title p {
+        font-size: 3.611vw;
+        line-height: 4.167vw;
+    }
+    header .info {
+        margin-bottom: 8.333vw;
+    }
+    header .info .elem {
+        height: 10.556vw;
+    }
+    header .info .elem .stars span {
+        font-size: 3.889vw;
+        margin-right: 1.389vw;
+    }
+    header .info .elem img {
+        width: 7.778vw;
+        height: 5.556vw;
+    }
+    header .info .elem .stars img {
+        width: 3.611vw;
+        height: 3.333vw;
+    }
+    header .info .elem p {
+        font-size: 3.333vw;
+        margin-top: 1.389vw;
+    }
+    header .carousel-cell img {
+        border-radius: 2.778vw;
+    }
+    header .slider {
+        margin-bottom: 5.556vw;
+    }
+    main {
+        padding: 0 5.556vw 11.111vw;
+    }
+    main h2 {
+        font-size: 4.444vw;
+        line-height: 6.944vw;
+        margin-bottom: 5.556vw;
+    }
+    main .stars img {
+        width: 3.611vw;
+        height: 3.333vw;
+        margin: 0 0.556vw;
+    }
+    main .about {
+        margin-bottom: 8.333vw;
+    }
+    main .about h2 {
+        font-size: 4.444vw;
+        line-height: 6.944vw;
+        margin-bottom: 5.556vw;
+    }
+    main .about .info {
+        margin-bottom: 2.778vw;
+        padding-right: 6.944vw;
+    }
+    main .about .info p {
+        font-size: 3.889vw;
+        line-height: 6.667vw;
+    }
+    main .about a {
+        font-size: 3.889vw;
+    }
+    main .rating {
+        margin-bottom: 12.500vw;
+    }
+    main .rating .left h3 {
+        font-size: 17.778vw;
+        line-height: 17.778vw; 
+        margin-bottom: 1.389vw;
+    }
+    main .rating .left .stars {
+        margin-bottom: 1.389vw;
+    }
+    main .rating .left span {
+        font-size: 3.333vw;
+        line-height: 6.667vw; 
+    }
+    main .rating .right .row {
+        margin-bottom: 4.167vw;
+    }
+    main .rating .right .row span {
+        font-size: 3.056vw;
+        margin-right: 1.389vw;
+    }
+    main .reviews {
+        margin-bottom: 5.556vw;
+    }
+    main .reviews .row {
+        margin-bottom: 6.944vw;
+    }
+    main .reviews .row .photo {
+        width: 13.333vw;
+        height: 13.333vw;
+        margin-right: 2.778vw;
+    }
+    main .reviews .row .center {
+        margin-right: 1.389vw;
+    }
+    main .reviews .row .center .name {
+        margin-bottom: 1.389vw;
+    }
+    main .reviews .row .center .name h3 {
+        font-size: 3.611vw;
+        margin-right: 2.778vw;
+    }
+    main .reviews .row .center .date {
+        font-size: 3.333vw;
+        margin-bottom: 1.389vw;
+    }
+    main .reviews .row .center p {
+        font-size: 3.889vw;
+        line-height: 6.667vw;
+    }
+    main .reviews .row .like img {
+        width: 6.667vw;
+        height: 6.667vw;
+    }
+    main .reviews .row .like span {
+        font-size: 2.778vw;
+    }
+    main .add-info .cell {
+        margin-bottom: 5.556vw;
+    }
+    main .add-info .cell h3 {
+        font-size: 3.889vw;
+        line-height: 6.944vw;
+    }
+    main .add-info .cell span {
+        font-size: 3.889vw;
+        line-height: 6.944vw;
+    }
+}
